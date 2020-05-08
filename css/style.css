@@ -1,0 +1,45 @@
+header ul li a:hover {
+	
+	text-decoration:none;
+	background:dodgerblue;
+}
+
+.logo-padding {
+	padding-right:30px;
+}
+
+.row-auto {
+	text-align:center;
+	color:white;
+	background:dodgerblue;
+	margin:10px;
+	height:300px;
+	width:1100px;
+}
+.row-auto:hover {
+	color:black;
+	background:white;
+	transition: all 0.5s;
+}
+
+.col-md{
+	
+	text-align:center;
+	color:white;
+	background:dodgerblue;
+	margin:10px;
+	height:350px;
+	width:300px;
+}
+
+.col-md:hover {
+	color:black;
+	background:white;
+	transition: all 0.5s;
+}
+
+.pad10 {
+	text-align:center;
+	padding-top:15px;
+	padding-bottom:15px;
+}
