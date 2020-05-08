@@ -8,15 +8,15 @@ header ul li a:hover {
 	padding-right:30px;
 }
 
-.row-auto {
-	text-align:center;
+.tanıtım {
+	text-align:center !important;
 	color:white;
 	background:dodgerblue;
 	margin:10px;
 	height:300px;
 	width:1100px;
 }
-.row-auto:hover {
+.tanıtım:hover {
 	color:black;
 	background:white;
 	transition: all 0.5s;
@@ -43,3 +43,49 @@ header ul li a:hover {
 	padding-top:15px;
 	padding-bottom:15px;
 }
+
+.row-md {
+	text-align:left;
+	padding-left:10px;
+	padding-top:10px;
+}
+
+
+.ozgecmis {
+	margin:auto;
+	width:500px;
+	margin-top:10px;
+	
+}
+
+.pad20 {
+	text-align:left;
+	padding-bottom:30px;
+}
+
+.ul{
+	text-align:left;
+	color:black;
+	background:dodgerblue;
+	margin:10px;
+	
+}
+.li:hover {
+	color:white;
+	background:#66b0f3;
+	transition: all 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
