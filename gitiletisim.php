@@ -38,16 +38,17 @@
 						<a class="nav-link" href="Özgeçmiş.html">Özgeçmiş</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" href="Şehrim.html">Şehrim</a>
+						<a class="nav-link" href="Şehrim.html">Şehrim</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="Mirasımız.html">Mirasımız</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="Iletisim.html">İletişim</a>
+						<a class="nav-link active" href="Iletisim.html">İletişim</a>
 					</li>
 					
 				</ul>
+				
 				<button class="btn btn-outline-light my-2 my-sm-0" type="button">Giriş Yap</button>
 				
 			</div>
@@ -55,15 +56,49 @@
 				
 		</header>
 		<div class="container">
-			<img width="500" height="300" src="images/şehrim4.jpg">
-			<p>Adapazarı Garı, Sakarya'nın Adapazarı ilçesinin Semerciler Mahallesi'nde yer alan ana tren istasyonudur.
-					İstasyon, Chemins de Fer Ottomans d'Anatolie / Osmanlı Anadolu Demiryolları (CFOA) Şirketi tarafından inşa edilerek Kasım 1899 tarihinde,
-					Arifiye – Adapazarı şube demiryolu hattıyla birlikte, hizmete girmiştir. Demiryolu hattının buradan Bolu'ya ve Ankara'ya uzatılması planlandıysa da, 
-					bu gerçekleşmemiş ve istasyon hattın son noktası olarak kalmıştır. 1969 yılında demiryolu hattı elektriklendirilmiş ve 
-					yeni gelişmiş bölgesel tren hizmetleri eklenmiştir.1 Şubat 2012 tarihinde Ankara – İstanbul yüksek hızlı demiryolu'nun inşaatı nedeniyle 
-					Haydarpaşa – Adapazarı Bölgesel Treni (Adapazarı Ekspresi) iptal edilmiş ve istasyon geçici olarak kapatılmıştır. İstasyon, 2013-2016 yılları arasında 
-					Adapazarı Ekspresi yerine Adaray'a hizmet vermiş, 2015 yılında ise Pendik – Adapazarı Bölgesel Treni'ne hizmet vermeye başlamıştır. </p>
+			<table class="col-md" width="400" height="400" border="1">
+				<tr>
+					<td>Kullanıcı Adınız : </td>
+					<td><?php echo $_POST["ad"];?></td>
+				</tr>
+				<tr>
+					<td>E-mailiniz : </td>
+					<td><?php echo $_POST["mail"];?></td>
+				</tr>
+				<tr>
+					<td>Sifreniz : </td>
+					<td><?php echo $_POST["sifre"];?></td>
+				</tr>
+				<tr>
+					<td>Hobileriniz : </td>
+					<td><?php  if(isset($_POST["Hobi"]))
+						{
+							$check=implode(",",$_POST["Hobi"]);
+							print_r($check);
+						}?></td>
+				</tr>
+				<tr>
+					<td> Şehriniz : </td>
+					<td><?php echo $_POST["sehirler"];?></td>
+				</tr>
+	
+				<tr>
+					<td>Açıklama : </td>
+					<td><?php echo $_POST["aciklama"];?></td>
+				</tr>
+				
+			</table>
+			<p><b>İletişim bilgileriniz Alınmıştır</b></p>
+			<form action ="Iletisim.html" method="post">
+				<input type = "submit" value = "Geri Dön">
+			</form>
+		
+		
 		</div>
+		
+		
+		
+		
 		
 		
 		
