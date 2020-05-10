@@ -22,7 +22,11 @@
   <body>
 	
 		<header class="navbar navbar-expand-lg navbar-dark bg-primary">	<!--MENÜ ÇUBUĞU-->
+<<<<<<< HEAD
 			<a class="navbar-brand " href="index.html">
+=======
+			<a class="navbar-brand " href="AnaSayfa.html">
+>>>>>>> e1fef3f223971cc556607f0c263c1f7aed784f60
 				<img class="logo-padding"src="images/logo.png" width="180"   alt="Saü">
 			</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +36,11 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item ">
+<<<<<<< HEAD
 						<a class="nav-link" href="index.html">Hakkında</a>
+=======
+						<a class="nav-link" href="AnaSayfa.html">Hakkında</a>
+>>>>>>> e1fef3f223971cc556607f0c263c1f7aed784f60
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="Özgeçmiş.html">Özgeçmiş</a>
