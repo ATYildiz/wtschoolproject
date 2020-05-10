@@ -43,11 +43,11 @@
 						<a class="nav-link active" href="Mirasımız.html">Mirasımız</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">İletişim</a>
+						<a class="nav-link" href="Iletisim.html">İletişim</a>
 					</li>
 					
 				</ul>
-				<button class="btn btn-outline-light my-2 my-sm-0" type="button">Giriş Yap</button>
+				<button class="btn btn-outline-light my-2 my-sm-0" type="button" data-toggle="modal" data-target="#girisModal">Giriş Yap</button>
 				
 			</div>
 
@@ -120,6 +120,34 @@
 			</div>
 		</div>
 		
+		<div class="modal fade" id="girisModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+				<form action="Login.php" method="POST">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalCenterTitle">Üye Girişi</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">				
+					<div class="form-group">
+						<label for="exampleInputEmail1">Mail Adresi</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="MailAdresi" required>
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1">Parola</label>
+						<input type="password" class="form-control" id="exampleInputPassword1" name="Parola" required>
+					</div>			  
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Vazgeç</button>
+					<button type="submit" class="btn btn-primary">Giriş Yap</button>
+				</div>
+				</form>
+				</div>
+			</div>
+		</div>
 	</body>
 	
 	

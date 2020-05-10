@@ -38,62 +38,79 @@
 						<a class="nav-link" href="Özgeçmiş.html">Özgeçmiş</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" href="Şehrim.html">Şehrim</a>
+						<a class="nav-link" href="Şehrim.html">Şehrim</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="Mirasımız.html">Mirasımız</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="Iletisim.html">İletişim</a>
+						<a class="nav-link active" href="Iletisim.html">İletişim</a>
 					</li>
 					
 				</ul>
-				<button class="btn btn-outline-light my-2 my-sm-0" type="button" data-toggle="modal" data-target="#girisModal">Giriş Yap</button>
+				
+				<button class="btn btn-outline-light my-2 my-sm-0" type="button">Giriş Yap</button>
 				
 			</div>
 
 				
 		</header>
 		<div class="container">
-			<img width="500" height="300" src="images/şehrim1.jpg">
-			<p>Sakarya’da Alışveriş Caddesi olarak bilinir.  Trafiğe kapalı olan bu cadde günün 24 saati sıcak ve canlıdır. 
-					Caddenin her iki tarafından birçok dükkan bulunur. Ayrıca otel, restoran,cafe ve eğlence merkezleri de bu cadde üzerinde bulunur.
-					Buraya yolunuz düştüğünde bu cadde üzerine uğrayıp alışveriş yapmadan kesinlikle geri dönmeyiniz. Zaten şehre gittiğinizde mutlaka uğramanız gerekecektir. 
-					Çünkü şehrin en popüler yeridir. Bütün ihtiyaçlarınız bu cadde üzerinde karşılayabilirsiniz.</p>
-		</div>
-		
-		
-		
-		
-		
-		
-		
-		<div class="modal fade" id="girisModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered" role="document">
-				<div class="modal-content">
-				<form action="Login.php" method="POST">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalCenterTitle">Üye Girişi</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">				
-					<div class="form-group">
-						<label for="exampleInputEmail1">Mail Adresi</label>
-						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="MailAdresi" required>
-					</div>
-					<div class="form-group">
-						<label for="exampleInputPassword1">Parola</label>
-						<input type="password" class="form-control" id="exampleInputPassword1" name="Parola" required>
-					</div>			  
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Vazgeç</button>
-					<button type="submit" class="btn btn-primary">Giriş Yap</button>
-				</div>
-				</form>
-				</div>
-			</div>
+			<div class="col-12">
+				<?php
+				
+					if(!$_POST)
+						header("Location:Iletisim.html");
+
+					echo '<ul class="list-group">';
+					if($_POST["Adiniz"])
+					{
+						echo '
+						<li class="list-group-item">
+						<b>Adınız & Soyadınız</b><br>
+						'.$_POST["Adiniz"].'
+						</li>
+						';
+					}
+					if($_POST["MailAdresi"])
+					{
+						echo '
+						<li class="list-group-item">
+						<b>Mail Adresiniz</b><br>
+						'.$_POST["MailAdresi"].'
+						</li>
+						';
+					}
+					if($_POST["Mesaj"])
+					{
+						echo '
+						<li class="list-group-item">
+						<b>Mesajınız</b><br>
+						'.$_POST["Mesaj"].'
+						</li>
+						';
+					}
+					if($_POST["Sehir"])
+					{
+						echo '
+						<li class="list-group-item">
+						<b>Şehriniz</b><br>
+						'.$_POST["Sehir"].'
+						</li>
+						';
+					}
+					if(count($_POST["Hobi"]))
+					{
+						echo '
+						<li class="list-group-item">
+						<b>Hobileriniz</b><br>
+						'.implode($_POST["Hobi"],",").'
+						</li>
+						';
+					}
+
+					echo '</ul>';
+				?>
+			</div>		
 		</div>
 	</body>

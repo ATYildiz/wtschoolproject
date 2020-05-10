@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+   <title>Ahmet Talha YILDIZ</title>
+  </head>
+  <body>
+	
+		<header class="navbar navbar-expand-lg navbar-dark bg-primary">	<!--MENÜ ÇUBUĞU-->
+			<a class="navbar-brand " href="AnaSayfa.html">
+				<img class="logo-padding"src="images/logo.png" width="180"   alt="Saü">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item ">
+						<a class="nav-link" href="AnaSayfa.html">Hakkında</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Özgeçmiş.html">Özgeçmiş</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Şehrim.html">Şehrim</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Mirasımız.html">Mirasımız</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="Iletisim.html">İletişim</a>
+					</li>
+					
+				</ul>
+				<button class="btn btn-outline-light my-2 my-sm-0" type="button" data-toggle="modal" data-target="#girisModal">Giriş Yap</button>
+				
+			</div>
+
+				
+		</header>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-lg pad30">	
+					<ul class="list-group">
+						<li class="list-group-item"><b>Adres</b><br>Sakarya Üniversitesi Esentepe Kampüsü Kemalpaşa Mahallesi Üniversite Caddesi 54050 Serdivan / SAKARYA</li>
+						<li class="list-group-item"><b>Telefon</b><br>+90 (264) 295 54 54</li>
+						<li class="list-group-item"><b>Fax</b><br>+90 (264) 295 50 32</li>
+						<li class="list-group-item"><b>E-Mail</b><br>ahmettalhay@gmail.com</li>
+					</ul>	
+					<br><br>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div style="position:relative;overflow:hidden;">
+					<a href="https://yandex.com.tr/harita?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Yandex.Haritalar</a>
+					<a href="https://yandex.com.tr/harita/?ll=30.325211%2C40.742375&pt=30.33333333%2C40.74083333&source=entity_search&utm_medium=mapframe&utm_source=maps&z=19" style="color:#eee;font-size:12px;position:absolute;top:14px;">Sakarya — Yandex.Haritalar</a>
+					<iframe src="https://yandex.com.tr/map-widget/v1/-/C8ROrBPF" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+				</div>
+				<div class="col offset">
+					<form action="iletisim.php" method="POST" id="iletisimFormu" enctype="multipart/form-data">
+						<div class="form-group">
+							<label>Adınız & Soyadınız</label>
+							<input type="text" class="form-control" name="Adiniz">
+						</div>
+						<div class="form-group">
+							<label>Mail Adresiniz</label>
+							<input type="email" class="form-control" name="MailAdresi">
+						</div>
+						<div class="form-group">
+							<label>Mesajınız</label>
+							<textarea class="form-control" name="Mesaj" placeholder="Lütfen iletmek istediğiniz mesajı girin."></textarea>
+						</div>
+						<div class="form-group">
+							<label>Yaşadığınız Şehir</label>
+							<select name="Sehir" class="form-control">
+								<option value="Sakarya">Sakarya</option>
+								<option value="Kocaeli">Kocaeli</option>
+								<option value="İstanbul">İstanbul</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label>Hobileriniz</label>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="Hobi[]" value="Futbol" id="Futbol">
+								<label class="form-check-label" for="Futbol">Futbol</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="Hobi[]" value="Basketbol" id="Basketbol">
+								<label class="form-check-label" for="Basketbol">Basketbol</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" name="Hobi[]" value="Hentbol" id="Hentbol">
+								<label class="form-check-label" for="Hentbol">Hentbol</label>
+							</div>
+						</div>
+						<button type="button" class="btn btn-primary gonder">Gönder</button>
+						<button type="reset" class="btn btn-defaul">Temizle</button>
+					</form>
+				</div>
+			</div>
+		
+		
+		
+		
+		</div>
+
+	<div class="modal fade" id="girisModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+			<form action="Login.php" method="POST">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalCenterTitle">Üye Girişi</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">				
+				<div class="form-group">
+					<label for="exampleInputEmail1">Mail Adresi</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="MailAdresi" required>
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Parola</label>
+					<input type="password" class="form-control" id="exampleInputPassword1" name="Parola" required>
+				</div>			  
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Vazgeç</button>
+				<button type="submit" class="btn btn-primary">Giriş Yap</button>
+			</div>
+			</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="js/site.js"></script>
+</body>

@@ -40,8 +40,8 @@ header ul li a:hover {
 
 .pad10 {
 	text-align:center;
-	padding-top:15px;
-	padding-bottom:15px;
+	padding-top:10px;
+	padding-bottom:10px;
 }
 
 .row-md {
@@ -51,12 +51,7 @@ header ul li a:hover {
 }
 
 
-.ozgecmis {
-	margin:auto;
-	width:500px;
-	margin-top:10px;
-	
-}
+
 
 .pad20 {
 	text-align:left;
@@ -74,6 +69,11 @@ header ul li a:hover {
 	color:white;
 	background:#66b0f3;
 	transition: all 0.5s;
+}
+.pad30 {
+	text-align:left;
+	padding-top:30px;
+	
 }
 
 
